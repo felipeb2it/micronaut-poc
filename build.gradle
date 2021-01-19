@@ -1,0 +1,41 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "6.0.0"
+    id "io.micronaut.application" version '1.0.3'
+}
+
+version "0.1"
+group "br.com.guiabolso"
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+micronaut {
+    runtime "netty"
+    testRuntime "junit5"
+    processing {
+        incremental true
+        annotations "br.com.guiabolso.*"
+    }
+}
+
+dependencies {
+    implementation("io.micronaut:micronaut-runtime")
+    implementation("javax.annotation:javax.annotation-api")
+    runtimeOnly("ch.qos.logback:logback-classic")
+}
+
+mainClassName = "br.com.guiabolso.Application"
+java {
+    sourceCompatibility = JavaVersion.toVersion('11')
+    targetCompatibility = JavaVersion.toVersion('11')
+}
+
+
+
+

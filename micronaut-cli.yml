@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: br.com.guiabolso
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, gradle, hibernate-validator, http-client, java, java-application, junit, logback, netty-server, properties, readme, shade]
