@@ -9,7 +9,7 @@ import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 
 @MicronautTest
-public class DesafioTest {
+public class PocTest {
 
     @SuppressWarnings("rawtypes")
 	@Inject
