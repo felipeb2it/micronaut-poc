@@ -1,4 +1,4 @@
-package br.com.guiabolso;
+package br.com.poc.micronaut;
 
 import javax.inject.Inject;
 
